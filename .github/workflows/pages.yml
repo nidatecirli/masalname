@@ -28,12 +28,15 @@ jobs:
           node - <<'NODE'
           const fs = require('node:fs');
           const html = fs.readFileSync('index.html', 'utf8');
-          const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
-          if (!scripts.length) throw new Error('No inline JavaScript found.');
-          scripts.forEach((match, i) => fs.writeFileSync('/tmp/masalname-inline-' + i + '.js', match[1]));
-          console.log('Checking ' + scripts.length + ' inline script(s).');
+          const openTag = '<script>';
+          const closeTag = '</script>';
+          const start = html.indexOf(openTag);
+          const end = html.indexOf(closeTag, start + openTag.length);
+          if (start < 0 || end < 0) throw new Error('No inline JavaScript found.');
+          fs.writeFileSync('/tmp/masalname-inline.js', html.slice(start + openTag.length, end));
+          console.log('Extracted inline JavaScript for syntax validation.');
           NODE
-          for script in /tmp/masalname-inline-*.js; do node --check "$script"; done
+          node --check /tmp/masalname-inline.js
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload website files
