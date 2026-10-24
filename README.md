@@ -2,7 +2,8 @@
 
 MASALNAME, Türk halk anlatılarını keşfetmek için hazırlanmış tek sayfalı, duyarlı bir web sitesidir.
 
-**Canlı site:** https://nidatecirli.github.io/masalname/
+**Depo:** https://github.com/nidatecirli/masalname  
+**Yayın adresi (Pages etkinleştirildikten sonra):** https://nidatecirli.github.io/masalname/
 
 ## Özellikler
 
@@ -16,7 +17,7 @@ MASALNAME, Türk halk anlatılarını keşfetmek için hazırlanmış tek sayfal
 
 ## Çalıştırma
 
-Siteyi doğrudan [canlı sayfadan](https://nidatecirli.github.io/masalname/) açabilir veya depodaki `index.html` dosyasını indirip tarayıcıda açabilirsin.
+`index.html` dosyasını indirip tarayıcıda açabilirsin. Site harici font veya JavaScript kitaplığı kullanmaz.
 
 ## Kaynaklar
 
@@ -26,6 +27,6 @@ Masal başlıkları ve yazar/derleyen bilgileri, Atatürk Kültür Merkezi Başk
 
 Tasarım ve kod geliştirme aşamalarında yapay zekâ desteğinden yararlanılmıştır. Proje sahibi metinleri, tasarım kararlarını ve JavaScript işleyişini sunumda açıklayabilmelidir.
 
-## GitHub Pages
+## İlk kez GitHub Pages'i etkinleştirme
 
-`.github/workflows/pages.yml` dosyası, `main` dalına yapılan her güncellemede siteyi GitHub Pages üzerinde yayımlamak üzere yapılandırılmıştır.
+İlk yayın için depo sahibi bir kez **Settings → Pages → Build and deployment → Source → GitHub Actions** yolunu seçmelidir. Bağlı entegrasyonun yetkileri Pages ayarını kendiliğinden oluşturmaya yetmediği için ilk yayın bu ayardan önce tamamlanamadı. Bu ayar seçildikten sonra `.github/workflows/pages.yml` dosyası `main` dalındaki güncellemeleri otomatik yayımlamak üzere yapılandırılmıştır.
