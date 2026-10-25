@@ -70,7 +70,7 @@
 \newcommand{\aciklama}[1]{{\color{gray}\itshape (#1)}}
 
 % Haftalık tablo görseli: dosya yoksa "görsel ekleyin" kutusu çıkar
-\newcommand{\haftagorsel}[1]{%
+\newcommand{\haftagorsel}[2]{%
   \IfFileExists{#1}{%
     {\shorthandoff{=}\includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{#1}}%
   }{%
@@ -79,7 +79,9 @@
   }%
 }
 % Haftalık katılım kutuları (işaretlemek için $\square$ yerine $\boxtimes$ yazın)
-\newcommand{\katilimkutulari}{\par\vspace{3pt}\small $\square$ Ders içinde katılım sergiledim\par $\square$ Telafi yaptım}
+\newcommand{\katilimderste}{\par\vspace{3pt}\small $\boxtimes$ Ders içinde katılım sergiledim\par $\square$ Telafi yaptım}
+\newcommand{\katilimtelif}{\par\vspace{3pt}\small $\square$ Ders içinde katılım sergiledim\par $\boxtimes$ Telafi yaptım}
+\newcommand{\katilimsonra}{\par\vspace{3pt}\small $\square$ Ders içinde katılım sergiledim\par $\square$ Telafi yaptım}
 
 % Ek görsel: dosya yoksa hiçbir şey göstermez
 \newcommand{\haftaek}[1]{%
@@ -118,7 +120,7 @@
 {\large \textbf{Hazırlayan:} \ogrenciadi \par}
 {\large \textbf{Öğrenci No:} \ogrencino \par}
 \vspace{0.55cm}
-{\small\color{red!70!black}Sunum videosu henüz eklenmedi. Haftalık tarihler, haftalara özgü commit bağlantıları ve katılım/telafi kutuları doğrulanınca güncellenmelidir.\par}
+{\small\color{red!70!black}Sunum videosu henüz eklenmedi. Haftalık kesin tarih ve ayrı commit bağlantıları paylaşılmadığı için eklenmemiştir; katılım/telafi bilgileri öğrencinin beyanına göre işaretlenmiştir.\par}
 \vspace{0.4cm}
 \fbox{\parbox{0.88\linewidth}{\centering\vspace{6pt}
 {\large\bfseries Proje Bağlantıları}\\[8pt]
@@ -153,12 +155,12 @@ Stil kodları içsel (\texttt{<style>} içinde)        & $\boxtimes$ \\
 Betik kodları içsel (\texttt{<script>} içinde)      & $\boxtimes$ \\
 İnternetsiz açılıp çalışıyor                        & $\boxtimes$ \\
 JavaScript sayfada anlamlı bir işlev görüyor        & $\boxtimes$ \\
-Masal metinleri kendi cümlelerimle yazıldı          & $\square$ \\
+Masal metinleri kendi cümlelerimle yazıldı          & $\boxtimes$ \\
 Sayfa telefonda da düzgün görünüyor                 & $\boxtimes$ \\
 \bottomrule
 \end{tabular}
 \end{center}
-Not: Masal metinleri kaynaklardan doğrudan alıntılanmak yerine yeniden anlatım biçiminde hazırlanmıştır. Metinlerin son dil kontrolü ve kişisel ifade düzeltmeleri teslimden önce öğrenci tarafından yapılmalıdır; bu nedenle bu kutu boş bırakılmıştır. Masaüstü ve mobil görünüm için kullanıcı tarafından sağlanan güncel ekran görüntüleri Bölüm 3.4’e eklenmiştir. Mobil görünüm kutusu sağlanan mobil ekran görüntülerine ve kullanıcının çalışma onayına dayanarak işaretlenmiştir. Masal metinlerinin kişisel ifadeyle son kontrolü ise ayrıca yapılmalıdır.
+Not: Öğrenci, 12 masalın metinlerini kendi cümleleriyle yazdığını belirtmiştir. Kaynaklar masal başlıkları ve yazar/derleyen bilgilerinin izlenebilmesi için listelenmiştir; metinler doğrudan kopya olarak sunulmamıştır. Masaüstü ve mobil görünüm için kullanıcı tarafından sağlanan güncel ekran görüntüleri Bölüm 3.4’e eklenmiştir.
 
 % ====================================================================
 \section{Masalların Seçimi}
@@ -219,12 +221,12 @@ Serif / sans-serif & -- & Büyük başlıklarda Georgia; arayüz metinlerinde Ar
 \subsection{Ekran Görüntüleri}
 Aşağıdaki görseller, GitHub Pages üzerinde yayımlanan MASALNAME'nin masaüstü ve mobil arayüzünden alınmıştır. Masaüstü görselleri açılış portalını ve yıldız haritasını; mobil görselleri ise açılış alanı ile masal kartlarının dar ekranda nasıl yerleştiğini gösterir.
 \begin{center}
-{\shorthandoff{=}\includegraphics[width=0.82\textwidth,height=5.0cm,keepaspectratio]{assets/site_masaustu_ana_sayfa.jpeg}}\\
+{\shorthandoff{=}\includegraphics[width=0.82\textwidth,height=5.0cm,keepaspectratio]{assets/site-01.jpg}}\\
 {\small\emph{Masaüstü görünümü: açılış portalı}}\\[5pt]
-{\shorthandoff{=}\includegraphics[width=0.82\textwidth,height=5.0cm,keepaspectratio]{assets/site_masaustu_yildiz_haritasi.jpeg}}\\
+{\shorthandoff{=}\includegraphics[width=0.82\textwidth,height=5.0cm,keepaspectratio]{assets/site-02.jpg}}\\
 {\small\emph{Masaüstü görünümü: yıldız haritası}}\\[5pt]
-{\shorthandoff{=}\includegraphics[width=0.42\textwidth,height=4.8cm,keepaspectratio]{assets/site_mobil_ana_sayfa.jpeg}}\hfill
-{\shorthandoff{=}\includegraphics[width=0.42\textwidth,height=4.8cm,keepaspectratio]{assets/site_mobil_masal_kartlari.jpeg}}\\
+{\shorthandoff{=}\includegraphics[width=0.42\textwidth,height=4.8cm,keepaspectratio]{assets/site-03.jpg}}\hfill
+{\shorthandoff{=}\includegraphics[width=0.42\textwidth,height=4.8cm,keepaspectratio]{assets/site-04.jpg}}\\
 {\small\emph{Mobil görünüm: açılış alanı ve masal kartları}}
 \end{center}
 
@@ -284,26 +286,25 @@ function getVisible() {
 % ====================================================================
 \section{Yapay Zekâ Kullanımı}
 % ====================================================================
-Yapay zekâ desteği hem metinlerin yeniden anlatım taslaklarında hem de HTML, CSS ve JavaScript geliştirme sürecinde kullanılmıştır. Aşağıdaki tablo araçların kullanım amacını ve sayfadaki yerini özetler. Görsel üretimi için harici bir görsel dosyası kullanılmamıştır; portal ve dekoratif öğeler CSS, metin simgeleri ve satır içi SVG ile oluşturulmuştur. Kodun çalışma mantığını anlama, test etme ve sunumda açıklama sorumluluğu proje sahibine aittir.
+Yapay zekâ desteğinden HTML, CSS ve JavaScript geliştirme, etkileşim fikirlerini uygulama, hata ayıklama ve rapor metnini düzenleme süreçlerinde yararlanılmıştır. Öğrenci, 12 masalın metinlerini kendi cümleleriyle yazmıştır; bu nedenle masal metinleri yapay zekâ tarafından yazılmış içerik olarak gösterilmemiştir. Aşağıdaki tablo kullanılan desteğin amacını ve sayfadaki yerini özetler. Görsel üretimi için harici bir görsel dosyası kullanılmamıştır; portal ve dekoratif öğeler CSS, metin simgeleri ve satır içi SVG ile oluşturulmuştur. Kodun çalışma mantığını anlama, test etme ve sunumda açıklama sorumluluğu proje sahibine aittir.
 
 \begin{longtable}{@{}p{2.6cm}p{3.6cm}p{4.2cm}p{3.4cm}@{}}
 \toprule
 \textbf{Araç} & \textbf{Ne için kullandınız?} & \textbf{İstem (prompt) özeti} & \textbf{Sayfada nerede?} \\
 \midrule
 \endhead
-ChatGPT & Masal yeniden anlatımı & Kaynak PDF'lerdeki anlatıları kısa, kaynakla ilişkili ve doğrudan kopya olmayan metin taslaklarına dönüştürme. & 12 masalın açıklama ve okuma metinleri. \\
 ChatGPT & HTML / CSS / JavaScript & Tek dosyada, koyu ve deneysel bir masal atlası; arama, filtre, harita ve okuma penceresi oluşturma. & Web sayfasının genel yapısı ve etkileşimleri. \\
 ChatGPT & Etkileşim tasarımı ve hata ayıklama & Ruh hâli seçimi, favoriler, günün masalı ve okuma pasaportu gibi ek işlevleri entegre etme ve kod denetimi. & Yeni özellikler ve yayımlama öncesi JavaScript sözdizimi kontrolü. \\
 \bottomrule
 \end{longtable}
 
 \subsection{Anladığım ve Kendim Yaptığım Kısımlar}
-Tasarım yönünü belirlerken gece gökyüzü, yıldız haritası, portal ve masal kapısı metaforlarını tercih ettim. Koyu lacivert-mor zemini altın, pembe, nane ve lila vurgularıyla birleştirdim; başlık, harita, kartlar ve okuma penceresi arasında aynı görsel dili korumaya çalıştım. Kodun temel mantığı; masal verisinin bir dizide tutulması, arama ve filtrelerin bu veri üzerinde çalışması, seçilen kaydın okuma penceresine aktarılması ve kişisel durumların tarayıcıda saklanması üzerine kuruludur. Bu bölümdeki açıklamalar, sunum öncesinde kodu kendi ekranımda yeniden inceleyip rahatça anlatabildiğim ölçüde güncellenmelidir. Masal metinlerinin son anlatım kontrolünü de yaparak kendi ifade biçimime uygun hâle getirmem gerekir.
+Tasarım yönünü belirlerken gece gökyüzü, yıldız haritası, portal ve masal kapısı metaforlarını tercih ettim. Koyu lacivert-mor zemini altın, pembe, nane ve lila vurgularıyla birleştirdim; başlık, harita, kartlar ve okuma penceresi arasında aynı görsel dili korumaya çalıştım. Kodun temel mantığı; masal verisinin bir dizide tutulması, arama ve filtrelerin bu veri üzerinde çalışması, seçilen kaydın okuma penceresine aktarılması ve kişisel durumların tarayıcıda saklanması üzerine kuruludur. On iki masal metnini kendi cümlelerimle yazdım; kaynakları masal seçiminde ve yazar/derleyen bilgilerini belirtmek için kullandım. Kod ve rapor düzenleme aşamasında yapay zekâ desteğinden yararlanırken tasarım yönü ve içerik kararlarını gözden geçirdim; sunum öncesinde kodun çalışma mantığını kendi cümlelerimle açıklamaya hazırlanacağım.
 
 % ====================================================================
 \section{Haftalık Katkılar}
 % ====================================================================
-Aşağıdaki açıklamalar, Nida Tecirlioğlu tarafından gönderilen ders çalışması ekran görüntülerine göre ayrıntılandırılmıştır. Ekran görüntülerinde HTML Online Viewer ve CodePen gibi çalışma ortamları görünmektedir. Bu alıştırmaların her biri için GitHub commit bağlantısı bulunmadığından, bu tür bir commit varmış gibi gösterilmemiştir. Ders tarihleri ile ders içi katılım/telafi durumları henüz ayrıca paylaşılmadığı için bu alanlar boş/doğrulanacak durumdadır. 7. ve 8. haftalara ilişkin çalışmalar kullanıcı tarafından henüz işlenmediği özellikle belirtilmiştir.
+Aşağıdaki açıklamalar, Nida Tecirlioğlu tarafından gönderilen ders çalışması ekran görüntülerine göre ayrıntılandırılmıştır. Öğrencinin bildirdiği katılım durumuna göre 1., 2. ve 3. haftalarda derse katılım; 4., 5. ve 6. haftalarda ise iş nedeniyle telafi çalışması işaretlenmiştir. Ayrı haftalık tarih veya commit bağlantısı ekran görüntülerinden doğrulanamadığı için bunlar uydurulmamıştır. 7. ve 8. haftaların çalışmaları henüz işlenmediğinden ilgili satırlar tamamlanmamış bırakılmıştır.
 
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.7cm}%
                     >{\raggedright\arraybackslash}p{6.4cm}%
@@ -320,36 +321,36 @@ Aşağıdaki açıklamalar, Nida Tecirlioğlu tarafından gönderilen ders çal�
 \endfoot
 
 \textbf{1. hafta} &
-\textbf{Tarih:} doğrulanacak. HTML belgesinin temel iskeletini tanıyarak \texttt{doctype}, \texttt{html}, \texttt{head}, \texttt{title} ve \texttt{body} gibi yapıların görevlerini uygulamalı olarak denedim. WorldWideWeb konulu bilgilendirme sayfasında başlık, paragraf ve liste gibi temel HTML elemanlarıyla içerik hiyerarşisi kurdum. HTML Online Viewer’ın kod ve önizleme panelleri arasında geçerek yazdığım işaretlemenin tarayıcıdaki karşılığını karşılaştırdım.\newline \textbf{Commit:} Bu alıştırmaya ait ayrı GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta1.png} \\
+\textbf{Tarih:} paylaşılmadı. HTML belgesinin temel iskeletini tanıyarak \texttt{doctype}, \texttt{html}, \texttt{head}, \texttt{title} ve \texttt{body} gibi yapıların görevlerini uygulamalı olarak denedim. WorldWideWeb konulu bilgilendirme sayfasında başlık, paragraf ve liste gibi temel HTML elemanlarıyla içerik hiyerarşisi kurdum. HTML Online Viewer’ın kod ve önizleme panelleri arasında geçerek yazdığım işaretlemenin tarayıcıdaki karşılığını karşılaştırdım.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-01.md}\katilimderste &
+\haftagorsel{weekly-submissions/week-01.jpg}{1} \\
 \midrule
 \textbf{2. hafta} &
-\textbf{Tarih:} doğrulanacak. İlk HTML sayfasını geliştirerek metin hiyerarşisini ve sayfa içi gezinme mantığını belirginleştirdim. “KONULAR”, “PROJE ÖZETİ”, “NASIL ÇALIŞIR” ve “NASIL KATKI SAĞLANIR” gibi bölümlerle içerik düzeni oluşturdum; bağlantı listesinin ilgili bölümlere götürmesini sağladım. İçsel CSS içinde sayfa genişliği, kenar boşlukları, yazı boyutu, renk, çizgi ve başlık stillerini düzenleyerek içerik ile görsel sunum arasındaki ilişkiyi gözlemledim.\newline \textbf{Commit:} Bu alıştırmaya ait ayrı GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta2.png} \\
+\textbf{Tarih:} paylaşılmadı. İlk HTML sayfasını geliştirerek metin hiyerarşisini ve sayfa içi gezinme mantığını belirginleştirdim. “KONULAR”, “PROJE ÖZETİ”, “NASIL ÇALIŞIR” ve “NASIL KATKI SAĞLANIR” gibi bölümlerle içerik düzeni oluşturdum; bağlantı listesinin ilgili bölümlere götürmesini sağladım. İçsel CSS içinde sayfa genişliği, kenar boşlukları, yazı boyutu, renk, çizgi ve başlık stillerini düzenleyerek içerik ile görsel sunum arasındaki ilişkiyi gözlemledim.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-02.md}\katilimderste &
+\haftagorsel{weekly-submissions/week-02.jpg}{2} \\
 \midrule
 \textbf{3. hafta} &
-\textbf{Tarih:} doğrulanacak. HTML Online Viewer üzerinde sayfa içeriğini bölümleme, başlık ve paragraf hiyerarşisi, bağlantılar ve liste düzeni üzerine farklı alıştırmalar yaptım. Kod alanında değişiklik yaptıktan sonra önizleme tarafında sonucun nasıl değiştiğini karşılaştırarak HTML etiketleriyle görsel çıktı arasındaki bağlantıyı pekiştirdim. Bu hafta grubunda 3.2, 3.4, 3.5 ve 3.7 olarak etiketlenen örnekler bulunuyor; butonla etkileşim başlatma ve kullanıcıya uyarı/geri bildirim gösterme denemeleri de yer alıyor.\newline \textbf{Commit:} Alıştırmalar HTML Online Viewer ortamında; haftalık GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta3.png} \\
+\textbf{Tarih:} paylaşılmadı. HTML Online Viewer üzerinde sayfa içeriğini bölümleme, başlık ve paragraf hiyerarşisi, bağlantılar ve liste düzeni üzerine farklı alıştırmalar yaptım. Kod alanında değişiklik yaptıktan sonra önizleme tarafında sonucun nasıl değiştiğini karşılaştırarak HTML etiketleriyle görsel çıktı arasındaki bağlantıyı pekiştirdim. Bu hafta grubunda 3.2, 3.4, 3.5 ve 3.7 olarak etiketlenen örnekler bulunuyor; butonla etkileşim başlatma ve kullanıcıya uyarı/geri bildirim gösterme denemeleri de yer alıyor.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-03.md}\katilimderste &
+\haftagorsel{weekly-submissions/week-03.jpg}{3} \\
 \midrule
 \textbf{4. hafta} &
-\textbf{Tarih:} doğrulanacak. Ekran kayıtlarında 4.1, 4.2 ve 4.3 etiketli etkileşim örnekleri bulunuyor. Sayaç çalışmasında bir değişkenin değerini artırma/azaltma ve sonucu sayfadaki metin alanına yazdırma; kullanıcı adı örneğinde girdiyi okuyup kişiselleştirilmiş karşılama üretme mantığı uygulandı. Bilet isteği düğmesi örneğinde ise tıklama sonrası kullanıcıya başarılı işlem mesajı gösterilerek olay dinleyicisi ve DOM güncellemesi pratiği yapıldı.\newline \textbf{Commit:} Alıştırmalar HTML Online Viewer ortamında; haftalık GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta4.png} \\
+\textbf{Tarih:} paylaşılmadı. Ekran kayıtlarında 4.1, 4.2 ve 4.3 etiketli etkileşim örnekleri bulunuyor. Sayaç çalışmasında bir değişkenin değerini artırma/azaltma ve sonucu sayfadaki metin alanına yazdırma; kullanıcı adı örneğinde girdiyi okuyup kişiselleştirilmiş karşılama üretme mantığı uygulandı. Bilet isteği düğmesi örneğinde ise tıklama sonrası kullanıcıya başarılı işlem mesajı gösterilerek olay dinleyicisi ve DOM güncellemesi pratiği yapıldı.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-04.md}\katilimtelif &
+\haftagorsel{weekly-submissions/week-04.jpg}{4} \\
 \midrule
 \textbf{5. hafta} &
-\textbf{Tarih:} doğrulanacak. Müzik temalı çoktan seçmeli bir bilgi yarışması üzerinde çalıştım. Soru ve seçeneklerin JavaScript dizisinden üretilmesi, kullanıcının seçimine göre doğru/yanlış geri bildirimi verilmesi ve puanın güncellenmesi üzerinde duruldu. Ekran görüntülerinde yarışmanın tamamlanma durumu, 3 üzerinden alınan skor ve “Başa Dön / Yeniden Başla” işlevi görülüyor; bu çalışma koşullu ifadeler, olay dinleyicileri, DOM metni güncelleme ve oyun durumunu takip etme mantığını pekiştirdi. Gönderilen kanıt grubunda sayaç alıştırmasının bir ekranı da bulunduğu için montaja destekleyici örnek olarak dahil edildi.\newline \textbf{Commit:} Alıştırmalar HTML Online Viewer ortamında; haftalık GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta5.png} \\
+\textbf{Tarih:} paylaşılmadı. Müzik temalı çoktan seçmeli bir bilgi yarışması üzerinde çalıştım. Soru ve seçeneklerin JavaScript dizisinden üretilmesi, kullanıcının seçimine göre doğru/yanlış geri bildirimi verilmesi ve puanın güncellenmesi üzerinde duruldu. Ekran görüntülerinde yarışmanın tamamlanma durumu, 3 üzerinden alınan skor ve “Başa Dön / Yeniden Başla” işlevi görülüyor; bu çalışma koşullu ifadeler, olay dinleyicileri, DOM metni güncelleme ve oyun durumunu takip etme mantığını pekiştirdi. Gönderilen kanıt grubunda sayaç alıştırmasının bir ekranı da bulunduğu için montaja destekleyici örnek olarak dahil edildi.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-05.md}\katilimtelif &
+\haftagorsel{weekly-submissions/week-05.jpg}{5} \\
 \midrule
 \textbf{6. hafta} &
-\textbf{Görsel kaydı:} 21.10.2026 (ders tarihi eşleştirmesi doğrulanacak). CodePen üzerinde NOIR adlı alternatif kültür rehberi için daha kapsamlı bir web arayüzü geliştirme çalışması yaptım. HTML, CSS ve JavaScript panellerini aynı çalışma alanında kullanarak üst gezinme menüsü, büyük giriş başlığı, “Sound / Visual / Play” içerik kartları, yaklaşan etkinlikler listesi ve e-posta kayıt alanından oluşan farklı bölümler tasarladım. Ayrıca görsel paleti değiştiren kontrollerle aynı tasarımın turuncu ve mavi gibi farklı atmosferlerde nasıl göründüğünü denedim. Bu çalışma, tekil buton alıştırmalarından daha büyük bir sayfanın bilgi mimarisi, stil sistemi ve etkileşimli görsel kontrollerine geçiş niteliğindeydi.\newline \textbf{Commit:} Görseller CodePen çalışma alanını gösteriyor; haftalık GitHub commit bağlantısı paylaşılmadı.\katilimkutulari &
-\haftagorsel{hafta6.png} \\
+\textbf{Görsel kaydı:} 21.10.2026 (ekran görüntüsündeki tarih; ders tarihi olduğu doğrulanmadı). CodePen üzerinde NOIR adlı alternatif kültür rehberi için daha kapsamlı bir web arayüzü geliştirme çalışması yaptım. HTML, CSS ve JavaScript panellerini aynı çalışma alanında kullanarak üst gezinme menüsü, büyük giriş başlığı, “Sound / Visual / Play” içerik kartları, yaklaşan etkinlikler listesi ve e-posta kayıt alanından oluşan farklı bölümler tasarladım. Ayrıca görsel paleti değiştiren kontrollerle aynı tasarımın turuncu ve mavi gibi farklı atmosferlerde nasıl göründüğünü denedim. Bu çalışma, tekil buton alıştırmalarından daha büyük bir sayfanın bilgi mimarisi, stil sistemi ve etkileşimli görsel kontrollerine geçiş niteliğindeydi.\newline \textbf{GitHub kanıtı:} \url{https://github.com/nidatecirli/masalname/blob/main/weekly-submissions/week-06.md}\katilimtelif &
+\haftagorsel{weekly-submissions/week-06.jpg}{6} \\
 \midrule
 \textbf{7. hafta} &
-\textbf{Durum:} Henüz işlenmedi. Bu haftaya ait çalışma açıklaması, ekran görüntüsü ve tarih henüz paylaşılmadı. İçerik doğrulanana kadar bu haftaya ait bir etkinlik veya katılım bilgisi tamamlanmış gibi yazılmamıştır.\newline \textbf{Commit:} Daha sonra eklenecek.\katilimkutulari &
-\haftagorsel{hafta7.png} \\
+\textbf{Durum:} Henüz işlenmedi. Bu haftaya ait çalışma açıklaması, ekran görüntüsü ve tarih henüz paylaşılmadı. İçerik doğrulanana kadar bu haftaya ait bir etkinlik veya katılım bilgisi tamamlanmış gibi yazılmamıştır.\newline \textbf{Commit:} Daha sonra eklenecek.\katilimsonra &
+\fbox{\parbox[c][2.6cm][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\centering\small\color{gray} 7. hafta kanıtı henüz eklenmedi}} \\
 \midrule
 \textbf{8. hafta} &
-\textbf{Durum:} Henüz işlenmedi. Bu haftaya ait çalışma açıklaması, ekran görüntüsü ve tarih henüz paylaşılmadı. Sonraki güncellemede gerçek çalışma, varsa telafi bilgisi ve kanıt görseli eklenecektir.\newline \textbf{Commit:} Daha sonra eklenecek.\katilimkutulari &
-\haftagorsel{hafta8.png} \\
+\textbf{Durum:} Henüz işlenmedi. Bu haftaya ait çalışma açıklaması, ekran görüntüsü ve tarih henüz paylaşılmadı. Sonraki güncellemede gerçek çalışma, varsa telafi bilgisi ve kanıt görseli eklenecektir.\newline \textbf{Commit:} Daha sonra eklenecek.\katilimsonra &
+\fbox{\parbox[c][2.6cm][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\centering\small\color{gray} 8. hafta kanıtı henüz eklenmedi}} \\
 \end{longtable}
 
 % ====================================================================
@@ -400,7 +401,7 @@ Video henüz yüklenmediği için bu kontrol listesi bilinçli olarak boş bıra
 % ====================================================================
 
 
-Bu projede HTML, içsel CSS ve JavaScript kullanılarak Türk masallarını keşif odaklı bir dijital atlasta bir araya getirdim. Süreç boyunca basit HTML sayfaları, CSS ile içerik düzenleme ve JavaScript ile buton olayları gibi ders alıştırmalarından; arama, filtre, yıldız haritası ve okuma penceresi içeren daha kapsamlı bir sayfaya geçiş yaptım. Koyu gece paleti ve yıldız/portal metaforu, masal temasını görsel bir sistem hâline getirirken ruh hâliyle keşif, günün masalı, favoriler ve okuma pasaportu kullanıcıya birden fazla gezinme yolu sunuyor. Tek HTML dosyası içinde çok sayıda işlevi yönetmek ve aynı düzeni mobil ekrana uyarlamak geliştirme sürecindeki temel zorluklardı. Kod ve metin geliştirme sırasında yapay zekâ desteğinden yararlanıldı; raporda bu kullanım açıkça belirtildi. Sağlanan ekran görüntüleriyle masaüstü ve mobil arayüzün örnekleri belgelendi. Son aşamada masal metinlerinin kişisel dil kontrolü, haftalık tarih/katılım bilgilerinin doğrulanması, 7. ve 8. hafta kayıtlarının eklenmesi ve video bağlantısının tamamlanması gerekir.
+Bu projede HTML, içsel CSS ve JavaScript kullanılarak Türk masallarını keşif odaklı bir dijital atlasta bir araya getirdim. Süreç boyunca basit HTML sayfaları, CSS ile içerik düzenleme ve JavaScript ile buton olayları gibi ders alıştırmalarından; arama, filtre, yıldız haritası ve okuma penceresi içeren daha kapsamlı bir sayfaya geçiş yaptım. Koyu gece paleti ve yıldız/portal metaforu, masal temasını görsel bir sistem hâline getirirken ruh hâliyle keşif, günün masalı, favoriler ve okuma pasaportu kullanıcıya birden fazla gezinme yolu sunuyor. Tek HTML dosyası içinde çok sayıda işlevi yönetmek ve aynı düzeni mobil ekrana uyarlamak geliştirme sürecindeki temel zorluklardı. Kod ve metin geliştirme sırasında yapay zekâ desteğinden yararlanıldı; raporda bu kullanım açıkça belirtildi. Sağlanan ekran görüntüleriyle masaüstü ve mobil arayüzün örnekleri belgelendi. Son aşamada haftalık tarih bilgilerinin doğrulanması, 7. ve 8. hafta kayıtlarının eklenmesi ve video bağlantısının tamamlanması gerekir.
 
 % ====================================================================
 \section{Kaynakça}
