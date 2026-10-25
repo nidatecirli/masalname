@@ -1,15 +1,15 @@
 # Haftalık Çalışmalar — MASALNAME / Programlamaya Giriş
 
-Bu klasörde haftalara göre açıklamalar bulunur. Ekran görüntülerinin kolajları raporun haftalık katkılar bölümünde ve yerel teslim paketindeki `weekly-submissions/weekly-evidence.pdf` dosyasında yer alır. Kolaj dosyası henüz GitHub'a ayrı binary dosya olarak eklenmedi; bu yüzden burada olmayan bir görsel bağlantısı verilmemiştir.
+Bu klasörde ilk altı haftanın açıklamaları ve her haftaya karşılık gelen ekran görüntüleri bulunur. Raporun LaTeX kaynağı bu görselleri doğrudan kullanır.
 
 ## Haftalara göre kayıtlar
 
-- [1. hafta — HTML belgesinin temel yapısı](week-01.md)
-- [2. hafta — İçerik hiyerarşisi ve içsel CSS](week-02.md)
-- [3. hafta — HTML düzeni ve ilk etkileşimler](week-03.md)
-- [4. hafta — JavaScript olayları ve sayaç](week-04.md)
-- [5. hafta — Müzik temalı bilgi yarışması](week-05.md)
-- [6. hafta — NOIR arayüzü ve görsel varyasyonlar](week-06.md)
+- [1. hafta — HTML belgesinin temel yapısı](week-01.md) · [Ekran görüntüsü](week-01.jpg)
+- [2. hafta — İçerik hiyerarşisi ve içsel CSS](week-02.md) · [Ekran görüntüsü](week-02.jpg)
+- [3. hafta — HTML düzeni ve ilk etkileşimler](week-03.md) · [Ekran görüntüsü](week-03.jpg)
+- [4. hafta — JavaScript olayları ve sayaç](week-04.md) · [Ekran görüntüsü](week-04.jpg)
+- [5. hafta — Müzik temalı bilgi yarışması](week-05.md) · [Ekran görüntüsü](week-05.jpg)
+- [6. hafta — NOIR arayüzü ve görsel varyasyonlar](week-06.md) · [Ekran görüntüsü](week-06.jpg)
 
 ## Katılım bilgisi
 
