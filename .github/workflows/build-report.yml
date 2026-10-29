@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'MASALNAME-Vize-Raporu.tex'
+      - '.github/workflows/build-report.yml'
       - 'weekly-submissions/**'
       - 'assets/**'
   workflow_dispatch:
@@ -25,7 +26,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            texlive-xetex texlive-lang-european texlive-latex-extra
+            texlive-xetex texlive-lang-european texlive-latex-extra texlive-fonts-recommended
 
       - name: Build report PDF
         run: |
