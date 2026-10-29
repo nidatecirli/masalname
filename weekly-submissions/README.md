@@ -1,6 +1,6 @@
 # Haftalık Çalışmalar — MASALNAME / Programlamaya Giriş
 
-Bu klasörde ilk altı haftanın açıklamaları ve her haftaya karşılık gelen ekran görüntüleri bulunur. Raporun LaTeX kaynağı bu görselleri doğrudan kullanır.
+Bu klasörde 1–6. haftaların ayrıntılı çalışma açıklamaları ve her haftaya karşılık gelen ekran görüntüleri bulunur. Ekran görüntüleri LaTeX raporunda da kullanılmaktadır.
 
 ## Haftalara göre kayıtlar
 
@@ -13,6 +13,6 @@ Bu klasörde ilk altı haftanın açıklamaları ve her haftaya karşılık gele
 
 ## Katılım bilgisi
 
-Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım sağlanmıştır. İş nedeniyle 4., 5. ve 6. haftalar telafi edilmiştir. 7. ve 8. haftalar henüz işlenmemiştir.
+Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım sağlanmıştır. İş nedeniyle 4., 5. ve 6. haftalar telafi edilmiştir. Bu rapor kapsamında 7. ve 8. haftalara ait ayrı bir haftalık etkinlik kaydı bulunmadığından bu haftalar eksik teslim olarak işaretlenmemiştir.
 
-Görselde görünen 21.10.2026 tarihi 6. hafta ekran görüntüsünün tarihidir; ders tarihi olarak doğrulanmamıştır. Haftalık kesin tarihler ve ayrı commit bağlantıları paylaşılmadığı için rapora eklenmemiştir.
+Görselde görünen 21.10.2026 tarihi 6. hafta ekran görüntüsünün tarihidir; ders tarihi olarak doğrulanmamıştır. Kesin haftalık tarihler ekran görüntülerinden çıkarılamayan yerlerde yazılmamıştır.
