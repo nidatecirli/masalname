@@ -3,6 +3,7 @@
 MASALNAME, Türk halk anlatılarını deneysel bir yıldız haritası üzerinden keşfetmeye davet eden tek sayfalı bir web projesidir.
 
 - **Canlı site:** https://nidatecirli.github.io/masalname/
+- **YouTube sunum videosu:** https://youtu.be/yj3fj8zpzHg
 - **GitHub deposu:** https://github.com/nidatecirli/masalname
 - **Vize raporu PDF:** [86230005_NidaTecirlioglu_vize.pdf](86230005_NidaTecirlioglu_vize.pdf)
 - **Düzenlenebilir LaTeX kaynak dosyası:** [MASALNAME-Vize-Raporu.tex](MASALNAME-Vize-Raporu.tex)
@@ -32,6 +33,6 @@ Tasarım ve kod geliştirme, etkileşim fikirleri, hata ayıklama ve rapor düze
 
 ## Son teslim öncesi
 
-- Sunum videosu 12–18 dakika aralığında kaydedilip Listelenmemiş veya Herkese açık olarak yayımlandıktan sonra bağlantısı rapor kapağına ve bu README dosyasına eklenmelidir.
+- Sunum videosu bağlantısı rapor kapağına ve bu README dosyasına eklendi: https://youtu.be/yj3fj8zpzHg. Nihai teslimden önce videonun 12–18 dakika aralığında olduğu, Listelenmemiş veya Herkese açık göründüğü ve bağlantının açıldığı kontrol edilmelidir.
 - Haftalık kesin tarihler ekran görüntülerinden doğrulanamayan yerlerde yazılmamıştır; 21.10.2026 tarihi yalnızca 6. hafta ekran görüntüsünde görünür.
 - MEBİS'e yalnızca nihai rapor PDF'i yüklenmelidir; ZIP ve HTML yüklenmemelidir.
