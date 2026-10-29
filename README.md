@@ -20,7 +20,7 @@ MASALNAME, Türk halk anlatılarını deneysel bir yıldız haritası üzerinden
 
 ## Haftalık çalışmalar
 
-`weekly-submissions/` klasöründe 1–6. haftaların açıklamaları ve görsel kanıtları yer alır. Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım sağlanmış; 4., 5. ve 6. haftalar iş nedeniyle telafi edilmiştir. Bu rapor kapsamındaki haftalık materyallerde 7. ve 8. haftalar için ayrı bir etkinlik kaydı bulunmadığından bunlar eksik teslim olarak gösterilmemiştir.
+`weekly-submissions/` klasöründe 1–6. haftaların açıklamaları ve görsel kanıtları yer alır. Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım sağlanmış; 4., 5. ve 6. haftalar iş nedeniyle telafi edilmiştir. Rapor, sağlanan görsel kanıtlarla belgelenen bu altı haftayı kapsar.
 
 ## Masal kaynakları ve metinler
 
@@ -30,8 +30,8 @@ Masal başlıkları ve yazar/derleyen bilgileri, Atatürk Kültür Merkezi Başk
 
 Tasarım ve kod geliştirme, etkileşim fikirleri, hata ayıklama ve rapor düzenleme süreçlerinde yapay zekâ desteğinden yararlanılmıştır. Masal metinleri öğrenci tarafından yazılmıştır. Proje sahibi, kullandığı kodun işleyişini sunumda açıklamalıdır.
 
-## Teslim notu
+## Son teslim öncesi
 
-- Sunum videosu 12–18 dakika aralığında kaydedilip YouTube'da Listelenmemiş veya Herkese açık olarak yayımlandıktan sonra bağlantısı rapor kapağına ve bu README dosyasına eklenmelidir.
-- Haftalık kesin tarihler mevcut ekran görüntülerinden doğrulanamayan yerlerde belirtilmemiştir; 21.10.2026 tarihi yalnızca 6. hafta ekran görüntüsünde görünmektedir.
+- Sunum videosu 12–18 dakika aralığında kaydedilip Listelenmemiş veya Herkese açık olarak yayımlandıktan sonra bağlantısı rapor kapağına ve bu README dosyasına eklenmelidir.
+- Haftalık kesin tarihler ekran görüntülerinden doğrulanamayan yerlerde yazılmamıştır; 21.10.2026 tarihi yalnızca 6. hafta ekran görüntüsünde görünür.
 - MEBİS'e yalnızca nihai rapor PDF'i yüklenmelidir; ZIP ve HTML yüklenmemelidir.
