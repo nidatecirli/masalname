@@ -6,7 +6,7 @@ MASALNAME, Türk halk anlatılarını deneysel bir yıldız haritası üzerinden
 - **GitHub deposu:** https://github.com/nidatecirli/masalname
 - **Vize raporu PDF:** [86230005_NidaTecirlioglu_vize.pdf](86230005_NidaTecirlioglu_vize.pdf)
 - **Düzenlenebilir LaTeX kaynak dosyası:** [MASALNAME-Vize-Raporu.tex](MASALNAME-Vize-Raporu.tex)
-- **Haftalık kayıtlar ve görsel kanıtlar:** [weekly-submissions/](weekly-submissions/README.md)
+- **Haftalık çalışma kayıtları ve ekran görüntüleri:** [weekly-submissions/](weekly-submissions/README.md)
 - **Masaüstü ve mobil ekran görüntüleri:** [assets/](assets/)
 
 ## Site özellikleri
@@ -20,7 +20,7 @@ MASALNAME, Türk halk anlatılarını deneysel bir yıldız haritası üzerinden
 
 ## Haftalık çalışmalar
 
-`weekly-submissions/` klasöründe 1–6. haftalara ait ayrıntılı çalışma açıklamaları (`.md`) ve karşılık gelen ekran görüntüleri (`.jpg`) vardır. Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım; iş nedeniyle 4., 5. ve 6. haftalarda telafi çalışması yapılmıştır. 7. ve 8. haftalar henüz tamamlanmamıştır.
+`weekly-submissions/` klasöründe 1–6. haftaların açıklamaları ve görsel kanıtları yer alır. Öğrenci beyanına göre 1., 2. ve 3. haftalarda derse katılım sağlanmış; 4., 5. ve 6. haftalar iş nedeniyle telafi edilmiştir. Bu rapor kapsamındaki haftalık materyallerde 7. ve 8. haftalar için ayrı bir etkinlik kaydı bulunmadığından bunlar eksik teslim olarak gösterilmemiştir.
 
 ## Masal kaynakları ve metinler
 
@@ -30,9 +30,8 @@ Masal başlıkları ve yazar/derleyen bilgileri, Atatürk Kültür Merkezi Başk
 
 Tasarım ve kod geliştirme, etkileşim fikirleri, hata ayıklama ve rapor düzenleme süreçlerinde yapay zekâ desteğinden yararlanılmıştır. Masal metinleri öğrenci tarafından yazılmıştır. Proje sahibi, kullandığı kodun işleyişini sunumda açıklamalıdır.
 
-## Tamamlanması gerekenler
+## Teslim notu
 
-- YouTube sunumu 12–18 dakika aralığında ve kamera açık olacak şekilde kaydedilip Listelenmemiş veya Herkese açık olarak yüklenmeli; bağlantısı rapora eklenmeli.
-- 7. ve 8. haftaların çalışmaları tamamlandığında açıklama ve kanıt dosyaları eklenmeli.
-- Haftalık kesin tarihler son kez doğrulanmalı; 21.10.2026 tarihi yalnızca 6. hafta ekran görüntüsünde görünmektedir.
-- MEBİS'e yalnızca nihai rapor PDF'i yüklenmeli; ZIP veya HTML yüklenmemelidir.
+- Sunum videosu 12–18 dakika aralığında kaydedilip YouTube'da Listelenmemiş veya Herkese açık olarak yayımlandıktan sonra bağlantısı rapor kapağına ve bu README dosyasına eklenmelidir.
+- Haftalık kesin tarihler mevcut ekran görüntülerinden doğrulanamayan yerlerde belirtilmemiştir; 21.10.2026 tarihi yalnızca 6. hafta ekran görüntüsünde görünmektedir.
+- MEBİS'e yalnızca nihai rapor PDF'i yüklenmelidir; ZIP ve HTML yüklenmemelidir.
